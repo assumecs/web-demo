@@ -1,0 +1,20 @@
+<!-- iframe -->
+<ion-view view-title="Iframe" class="service" has-bottom="true" hide-nav-bar="true">
+    <div class="bar bar-header bar-primary" align-title="center">
+        <button ng-click="go(-1)" class="button button-icon">
+            <i class="icon ion-arrow-left-c"></i>
+        </button>
+        <h1 class="title" style="font-family:'黑体';">Iframe</h1>
+    </div>
+    <ion-content class="has-header" scroll="true" style="background:rgb(244,244,244);">
+        <iframe ng-src="{{url}}" height="100%" scroll="true" target="iframe1" id="mainFrame" width="100%"></iframe>
+    </ion-content>
+</ion-view>
+<style>
+    .has-header > .scroll {
+        height: 100%;
+    }
+    .bar-primary {
+        background-color: #387ef5;
+    }
+</style>

@@ -1,0 +1,23 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+    <div class="center">
+      <!-- <textarea class="input-url" ng-model="vo.url" placeholder="此处输入URL" rows="5"></textarea> -->
+      <input class="input-url" ng-model="vo.url" placeholder="此处输入URL"></input>
+      <button class="button button-positive button-block" ng-click="toIframe()" ng-disabled="!vo.url">iframe</button>
+      <button class="button button-positive button-block" ng-click="toWebview()" ng-disabled="!vo.url||!cordova">plugin</button>
+    </div>
+
+  </ion-content>
+</ion-view>
+<style>
+  .input-url {
+    width: 100%;
+    border: solid #0f0f0f 1px;
+    resize: none;
+  }
+</style>
