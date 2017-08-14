@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Ionic App Base
 ==============
 
@@ -24,3 +25,7 @@ More info on this can be found on the Ionic [Getting Started](https://ionicframe
 ## Issues
 
 Issues have been disabled on this repo. If you do find an issue or have a question, consider posting it on the [Ionic Forum](https://forum.ionicframework.com/). If there is truly an error, follow our guidelines for [submitting an issue](https://ionicframework.com/submit-issue/) to the main Ionic repository.
+=======
+# web-demo
+web-demo, to test web app, in iframe and webview plugin
+>>>>>>> b16a6d9e8659e78594e7fdd0964054720e27290f
