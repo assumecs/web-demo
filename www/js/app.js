@@ -38,6 +38,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/tabs.html'
   })
 
+  .state('iframe', {
+    url: '/iframe',
+    templateUrl: 'templates/iframe.html',
+    controller: 'IframeCtrl'
+  })
+
   // Each tab has its own nav history stack:
 
   .state('tab.dash', {
