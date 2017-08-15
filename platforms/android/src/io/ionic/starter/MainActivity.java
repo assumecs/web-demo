@@ -19,6 +19,9 @@
 
 package io.ionic.starter;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
@@ -33,6 +36,12 @@ public class MainActivity extends CordovaActivity
         Bundle extras = getIntent().getExtras();
         if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
             moveTaskToBack(true);
+        }
+        if(Build.VERSION.SDK_INT >= 23 && PackageManager.PERMISSION_DENIED == checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)) {
+            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        }
+        if(Build.VERSION.SDK_INT >= 23 && PackageManager.PERMISSION_DENIED == checkSelfPermission(Manifest.permission.CAMERA)) {
+            requestPermissions(new String[]{Manifest.permission.CAMERA}, 1);
         }
 
         // Set by <content src="index.html" /> in config.xml
