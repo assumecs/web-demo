@@ -41,7 +41,7 @@ public class MainActivity extends CordovaActivity
             requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
         }
         if(Build.VERSION.SDK_INT >= 23 && PackageManager.PERMISSION_DENIED == checkSelfPermission(Manifest.permission.CAMERA)) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA}, 1);
+            requestPermissions(new String[]{Manifest.permission.CAMERA}, 2);
         }
 
         // Set by <content src="index.html" /> in config.xml
