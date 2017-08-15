@@ -12,3 +12,4 @@ platforms/android/.idea/
 .project
 .settings/
 *.iml
+platforms/android/.gradle/
