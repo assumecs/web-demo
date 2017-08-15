@@ -5,8 +5,8 @@ node_modules/
 #platforms/
 #plugins/
 build/
-.gradle/
-.idea/
+platforms/android/.gradle/
+platforms/android/.idea/
 .DS_Store/
 .classpath
 .project
